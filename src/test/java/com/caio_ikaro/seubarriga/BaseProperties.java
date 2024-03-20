@@ -12,4 +12,6 @@ public class BaseProperties {
 
   public static final String PASSWORD = "12345678";
 
+  public static final String NOME_CONTA = "ContaTeste1";
+
 }

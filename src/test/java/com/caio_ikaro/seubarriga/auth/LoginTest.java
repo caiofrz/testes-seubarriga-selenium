@@ -27,8 +27,8 @@ public class LoginTest {
     WebElement senha = driver.findElement(By.id("senha"));
     senha.sendKeys(BaseProperties.PASSWORD);
 
-    WebElement cadastrar = driver.findElement(By.cssSelector("[type='submit']"));
-    cadastrar.click();
+    WebElement entrar = driver.findElement(By.cssSelector("[type='submit']"));
+    entrar.click();
 
     WebElement error = driver.findElement(By.className("alert-danger"));
 
@@ -45,8 +45,8 @@ public class LoginTest {
     WebElement senha = driver.findElement(By.id("senha"));
     senha.sendKeys(BaseProperties.PASSWORD);
 
-    WebElement cadastrar = driver.findElement(By.cssSelector("[type='submit']"));
-    cadastrar.click();
+    WebElement entrar = driver.findElement(By.cssSelector("[type='submit']"));
+    entrar.click();
 
     WebElement error = driver.findElement(By.className("alert-danger"));
 
@@ -63,8 +63,8 @@ public class LoginTest {
     WebElement senha = driver.findElement(By.id("senha"));
     senha.sendKeys("");
 
-    WebElement cadastrar = driver.findElement(By.cssSelector("[type='submit']"));
-    cadastrar.click();
+    WebElement entrar = driver.findElement(By.cssSelector("[type='submit']"));
+    entrar.click();
 
     WebElement error = driver.findElement(By.className("alert-danger"));
 
@@ -81,8 +81,8 @@ public class LoginTest {
     WebElement senha = driver.findElement(By.id("senha"));
     senha.sendKeys(BaseProperties.PASSWORD);
 
-    WebElement cadastrar = driver.findElement(By.cssSelector("[type='submit']"));
-    cadastrar.click();
+    WebElement entrar = driver.findElement(By.cssSelector("[type='submit']"));
+    entrar.click();
 
     Thread.sleep(2000);
     //Se fosse um login com sucesso deveria ser redirecionado para /logar
