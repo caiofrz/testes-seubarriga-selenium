@@ -19,7 +19,7 @@ public class ContaTest {
     driver.get(BaseProperties.BASE_URL);
 
     WebElement email = driver.findElement(By.id("email"));
-    email.sendKeys("teste999999999999999999@email.com");
+    email.sendKeys(BaseProperties.EMAIL);
     WebElement senha = driver.findElement(By.id("senha"));
     senha.sendKeys(BaseProperties.PASSWORD);
     driver.findElement(By.cssSelector("[type='submit']")).click();

@@ -88,4 +88,24 @@ public class LoginTest {
     //Se fosse um login com sucesso deveria ser redirecionado para /logar
     Assertions.assertNotEquals(BaseProperties.BASE_URL + "/logar", driver.getCurrentUrl());
   }
+
+  @Test
+  void deveRealizarLogoutComSucesso() throws InterruptedException {
+
+    WebElement email = driver.findElement(By.id("email"));
+    email.sendKeys("teste999999999999999999@email.com");
+    WebElement senha = driver.findElement(By.id("senha"));
+    senha.sendKeys(BaseProperties.PASSWORD);
+
+    WebElement entrar = driver.findElement(By.cssSelector("[type='submit']"));
+    entrar.click();
+
+    Thread.sleep(1000);
+    WebElement sair = driver.findElement(By.cssSelector("[href='/logout']"));
+    sair.click();
+
+    WebElement login = driver.findElement(By.cssSelector("[href='/login']"));
+    Assertions.assertNotNull(login);
+    Assertions.assertEquals(BaseProperties.BASE_URL + "/logout", driver.getCurrentUrl());
+  }
 }
