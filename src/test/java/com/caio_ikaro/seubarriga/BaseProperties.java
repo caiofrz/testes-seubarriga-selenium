@@ -8,6 +8,8 @@ public class BaseProperties {
 
   public static final String EMAIL = "teste9999@email.com";
 
+  public static final String INAVLID_EMAIL = "teste9999.email.com";
+
   public static final String PASSWORD = "12345678";
 
 }
